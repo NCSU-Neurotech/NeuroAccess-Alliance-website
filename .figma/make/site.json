@@ -1,0 +1,10 @@
+{
+  "description": "Connects neuroscience students, researchers, and neuro-impaired individuals with educational resources, funding, and partnerships to advance neurotechnology access.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
