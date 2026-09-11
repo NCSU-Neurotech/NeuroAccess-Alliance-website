@@ -45,7 +45,7 @@ export default function Home() {
               {[
                 { num: '3', label: 'University Partnerships', sub: 'NC State and regional institutions', Icon: IconGraduate, grad: 'linear-gradient(135deg, #EEF6FF, #D6EEFF)', iconColor: '#3AACF0' },
                 { num: '501(c)(3)', label: 'Federal Tax-Exempt Status', sub: 'North Carolina registered nonprofit', Icon: IconShield, grad: 'linear-gradient(135deg, #F0FFF4, #D6F5E3)', iconColor: '#28A870' },
-                { num: '2025', label: 'Founded in Raleigh, NC', sub: 'Mission-driven from day one', Icon: IconMapPin, grad: 'linear-gradient(135deg, #FFF8EE, #FFEBD6)', iconColor: '#E8A838' },
+                { num: '2026', label: 'Founded in Raleigh, NC', sub: 'Mission-driven from day one', Icon: IconMapPin, grad: 'linear-gradient(135deg, #FFF8EE, #FFEBD6)', iconColor: '#E8A838' },
               ].map((stat, i) => (
                 <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '1.25rem', padding: '1.5rem 1.75rem', background: stat.grad, borderRadius: 20, border: '1px solid rgba(58,172,240,0.12)', transition: 'transform 0.2s, box-shadow 0.2s' }}
                   onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.transform = 'translateY(-2px)'; (e.currentTarget as HTMLDivElement).style.boxShadow = '0 8px 24px rgba(58,172,240,0.12)' }}

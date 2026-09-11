@@ -126,7 +126,7 @@ export default function Contact() {
               </p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                 {[
-                  { Icon: IconMail, label: 'Email', value: 'contact@neuroaccessalliance.org', color: '#3AACF0' },
+                  { Icon: IconMail, label: 'Email', value: 'neuroaccessalliance@gmail.com', color: '#3AACF0' },
                   { Icon: IconMapPin, label: 'Location', value: 'Raleigh, North Carolina', color: '#5B8DEF' },
                 ].map(item => (
                   <div key={item.label} style={{ display: 'flex', alignItems: 'center', gap: '1rem', padding: '1rem 1.25rem', background: '#F7FBFF', borderRadius: 16, border: '1.5px solid rgba(58,172,240,0.15)' }}>

@@ -1,36 +1,56 @@
+import andrewPhoto from '../assets/board/andrew.jpg'
+import emeryPhoto from '../assets/board/emery.jpg'
+import samPhoto from '../assets/board/sam.jpg'
+import asaPhoto from '../assets/board/asa.jpg'
+
 const boardMembers = [
   {
     name: 'Andrew Oliver',
-    title: 'Board Member',
-    credentials: '',
-    affiliation: 'NeuroAccess Alliance',
-    expertise: ['Nonprofit strategy', 'Neuroscience advocacy', 'Community outreach'],
-    bio: 'Andrew co-founded the NeuroAccess Alliance with a vision of making neurotechnology accessible to students and patients across North Carolina. His work bridges the gap between research institutions and underserved communities.',
+    title: 'President',
+    credentials: 'Founder',
+    affiliation: 'NC State University',
+    photo: andrewPhoto,
+    expertise: ['Neuromuscular Rehabilitation Engineering Lab', 'Neurotech & Neuroscience Clubs', 'Nonprofit leadership'],
+    bio: "Andrew is a Junior at NC State University pursuing a degree in integrative physiology and neurobiology. He is actively working as a lab assistant in the Neuromuscular Rehabilitation Engineering Laboratory (NREL), and serves as the scholarship chair for his fraternity. As an executive officer for both the Neurotech and Neuroscience Clubs at NC State, he is dedicated to expanding opportunities for the local Neuroscience Community. After noticing a gap in North Carolina's neuroscience initiatives, he founded the NeuroAccess Alliance in June of 2026.",
     initials: 'AO',
     grad: 'linear-gradient(135deg, #3AACF0, #5B8DEF)',
     shadow: 'rgba(58,172,240,0.3)',
   },
   {
     name: 'Emery Meyer',
-    title: 'Caldwell Fellow',
-    credentials: 'Board Member',
+    title: 'Treasurer',
+    credentials: 'Co-Founder',
     affiliation: 'NC State University',
-    expertise: ['Leadership development', 'Interdisciplinary collaboration', 'Higher education'],
-    bio: "Emery brings exceptional leadership experience through the Caldwell Fellowship, NC State's most selective leadership program. Their work at NAA focuses on building sustainable institutional partnerships.",
+    photo: emeryPhoto,
+    expertise: ['Neural decoding research', 'BCI hardware design', 'Nonprofit leadership'],
+    bio: "Emery is a Senior at NC State pursuing a degree in Molecular and Structural Biochemistry and a Caldwell Fellow. He conducted research in both the Goller Lab and the Mishra Lab, focused on chemical neuroscience. With two years of research experience, Emery has been dedicated to expanding scientific opportunity in neuroscience throughout his time at NC State. That dedication led him to build a visual reconstruction pipeline for neural decoding, as well as a functional head movement cursor for people with limited mobility, and to co-found Neurotech at NCSU in August 2025 and NeuroAccess Alliance in June 2026.",
     initials: 'EM',
     grad: 'linear-gradient(135deg, #5B8DEF, #7B6FE8)',
     shadow: 'rgba(91,141,239,0.3)',
   },
   {
     name: 'Sam Wychowski',
-    title: 'Partner',
-    credentials: 'Board Member',
-    affiliation: '',
-    expertise: ['Strategic partnerships', 'Organizational development', 'Funding strategy'],
-    bio: "Sam serves as a key strategic partner to the NeuroAccess Alliance, advising on organizational structure and partnership development. Their experience in building mission-driven organizations informs NAA's growth strategy.",
+    title: 'Secretary',
+    credentials: 'Founding Member',
+    affiliation: 'NC State University',
+    photo: samPhoto,
+    expertise: ['Sports science research', 'Community growth', 'Neuroscience advocacy'],
+    bio: "Samuel is currently a Sophomore at NC State pursuing a bachelor's degree in human biology. He is currently volunteering as a member of NC State athletics nutrition and is conducting sports science research with NC State faculty over the course of the 2026 Fall semester. Sam serves as one of the founding members of the NeuroAccess Alliance and wants to help it grow as a major force in Neuroscience technology, research, and aid right in the heart of North Carolina. He sees his involvement in the NeuroAccess Alliance as a way to continue the push to advance neuroscience innovation while also fostering the betterment of the human race.",
     initials: 'SW',
     grad: 'linear-gradient(135deg, #3AACF0, #50CDD6)',
     shadow: 'rgba(58,172,240,0.3)',
+  },
+  {
+    name: 'Asa Beale',
+    title: 'Board Member',
+    credentials: 'Ph.D. Student',
+    affiliation: 'NC State University',
+    photo: asaPhoto,
+    expertise: ['Research design', 'Psychometrics', 'Research funding strategy'],
+    bio: "Asa Beale is a Ph.D. student in Industrial-Organizational Psychology at NC State University, where he earned his B.A. in Psychology with a minor in Business Administration. He has conducted research in NC State's Psychometrics Lab, developing a keen eye for research design and dissemination. As a former member of NC State's Neuroscience Club, Asa developed a strong interest in neuroscience research. He hopes to advance The NeuroAccess Alliance's mission by reviewing promising neuroscience research in order to connect it with the funding needed to make it possible.",
+    initials: 'AB',
+    grad: 'linear-gradient(135deg, #50CDD6, #3AACF0)',
+    shadow: 'rgba(80,205,214,0.3)',
   },
 ]
 
@@ -54,16 +74,21 @@ export default function Board() {
             Our board combines academic rigor, leadership training, and strategic expertise to govern NAA with transparency and genuine care for the communities we serve.
           </p>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.5rem' }} className="board-grid">
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }} className="board-grid">
             {boardMembers.map((m, i) => (
               <div key={i} style={{ background: '#fff', border: '1.5px solid rgba(58,172,240,0.12)', borderRadius: 24, padding: '2.5rem 2rem', display: 'flex', flexDirection: 'column', gap: '1.25rem', boxShadow: '0 4px 20px rgba(58,172,240,0.06)', transition: 'transform 0.25s, box-shadow 0.25s' }}
                 onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.transform = 'translateY(-4px)'; (e.currentTarget as HTMLDivElement).style.boxShadow = `0 12px 36px ${m.shadow}` }}
                 onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.transform = 'translateY(0)'; (e.currentTarget as HTMLDivElement).style.boxShadow = '0 4px 20px rgba(58,172,240,0.06)' }}
               >
-                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                  <div style={{ width: 60, height: 60, borderRadius: '50%', background: m.grad, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, boxShadow: `0 6px 16px ${m.shadow}` }}>
-                    <span style={{ fontFamily: 'DM Serif Display, Georgia, serif', fontSize: '1.2rem', fontWeight: 400, color: '#fff' }}>{m.initials}</span>
-                  </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '1.1rem' }}>
+                  {m.photo ? (
+                    <img src={m.photo} alt={m.name}
+                      style={{ width: 76, height: 76, borderRadius: '50%', objectFit: 'cover', flexShrink: 0, boxShadow: `0 6px 16px ${m.shadow}`, border: '3px solid #fff', outline: `2px solid ${m.shadow}` }} />
+                  ) : (
+                    <div style={{ width: 76, height: 76, borderRadius: '50%', background: m.grad, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, boxShadow: `0 6px 16px ${m.shadow}` }}>
+                      <span style={{ fontFamily: 'DM Serif Display, Georgia, serif', fontSize: '1.4rem', fontWeight: 400, color: '#fff' }}>{m.initials}</span>
+                    </div>
+                  )}
                   <div>
                     <div style={{ fontFamily: 'DM Serif Display, Georgia, serif', fontSize: '1.2rem', color: '#1A2B3C', lineHeight: 1.2 }}>{m.name}</div>
                     <div style={{ fontFamily: 'Nunito, sans-serif', fontSize: '0.8rem', fontWeight: 700, color: '#3AACF0', marginTop: 2 }}>

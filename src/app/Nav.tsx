@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { NavLink, useLocation } from 'react-router'
+import naaMark from '../assets/naa-mark.png'
 
 const links = [
   { label: 'Mission', to: '/' },
@@ -36,20 +37,8 @@ export default function Nav() {
       borderBottom: '1px solid rgba(110,198,245,0.2)',
     }}>
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: 68 }}>
-        <NavLink to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-          <div style={{ width: 36, height: 36, borderRadius: 12, background: 'linear-gradient(135deg, #3AACF0, #5B8DEF)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 4px 12px rgba(58,172,240,0.3)' }}>
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-              <circle cx="9" cy="9" r="3" fill="white" fillOpacity="0.9"/>
-              <circle cx="9" cy="3" r="1.5" fill="white" fillOpacity="0.6"/>
-              <circle cx="9" cy="15" r="1.5" fill="white" fillOpacity="0.6"/>
-              <circle cx="3" cy="9" r="1.5" fill="white" fillOpacity="0.6"/>
-              <circle cx="15" cy="9" r="1.5" fill="white" fillOpacity="0.6"/>
-              <line x1="9" y1="6" x2="9" y2="4.5" stroke="white" strokeWidth="1" strokeOpacity="0.5"/>
-              <line x1="9" y1="12" x2="9" y2="13.5" stroke="white" strokeWidth="1" strokeOpacity="0.5"/>
-              <line x1="6" y1="9" x2="4.5" y2="9" stroke="white" strokeWidth="1" strokeOpacity="0.5"/>
-              <line x1="12" y1="9" x2="13.5" y2="9" stroke="white" strokeWidth="1" strokeOpacity="0.5"/>
-            </svg>
-          </div>
+        <NavLink to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
+          <img src={naaMark} alt="NeuroAccess Alliance" style={{ height: 38, width: 'auto', display: 'block' }} />
           <div>
             <div style={{ fontFamily: 'DM Serif Display, Georgia, serif', fontSize: '1.05rem', fontWeight: 400, color: '#1A2B3C', lineHeight: 1.1 }}>NeuroAccess</div>
             <div style={{ fontFamily: 'Nunito, sans-serif', fontSize: '0.55rem', fontWeight: 700, color: '#3AACF0', letterSpacing: '0.2em', textTransform: 'uppercase', lineHeight: 1 }}>Alliance</div>

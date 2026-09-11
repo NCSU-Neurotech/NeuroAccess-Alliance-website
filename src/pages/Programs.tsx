@@ -13,7 +13,7 @@ const programs = [
     border: 'rgba(58,172,240,0.2)',
     description: 'Hands-on workshops introducing students and community members to neurotechnology concepts, tools, and career pathways. Sessions cover EEG fundamentals, BCI software, and ethical considerations in neural data.',
     impact: 'Your sponsorship funds workshop kits, facilitator training, and scholarships for underrepresented participants.',
-    status: 'Planned — Launch 2025',
+    status: 'Planned — Launching 2026–27',
   },
   {
     num: '02',
@@ -26,7 +26,7 @@ const programs = [
     border: 'rgba(232,164,56,0.2)',
     description: 'A lending library of consumer neurotechnology hardware — EEG headsets, EMG sensors, and related devices — available to students, researchers, and individuals at no cost. The first of its kind in the Triangle.',
     impact: 'Each sponsored device kit enables up to 12 students per semester to run real neural data experiments without personal cost.',
-    status: 'Planned — Q3 2025',
+    status: 'Planned — 2026–27',
   },
   {
     num: '03',
@@ -39,7 +39,7 @@ const programs = [
     border: 'rgba(91,141,239,0.2)',
     description: 'Micro-grants of $500–$2,500 for undergraduate and early-graduate researchers pursuing neuroscience projects with translational or community relevance. Priority given to first-generation students and underrepresented groups.',
     impact: 'A $5,000 sponsorship funds two complete research grants plus program administration for a full academic year.',
-    status: 'Planned — AY 2025–26',
+    status: 'Planned — AY 2026–27',
   },
   {
     num: '04',
@@ -52,7 +52,7 @@ const programs = [
     border: 'rgba(40,168,112,0.2)',
     description: 'Connecting NAA members with patients and caregivers at Hilltop Home and partner facilities to understand lived neurological experience. Includes facilitated roundtables, assistive technology demonstrations, and co-design sessions.',
     impact: 'Sponsorship funds facilitator stipends, accessible materials, and transportation for community participants.',
-    status: 'Planned — Pilot 2025',
+    status: 'Planned — Pilot 2026–27',
   },
 ]
 

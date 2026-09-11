@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router'
+import naaMark from '../assets/naa-mark.png'
 
 const nav = ['Mission', 'Story', 'Board', 'Partners', 'Programs', 'Contact']
 const navPaths: Record<string, string> = { Mission: '/', Story: '/story', Board: '/board', Partners: '/partners', Programs: '/programs', Contact: '/contact' }
@@ -9,20 +10,8 @@ export default function Footer() {
       <div style={{ maxWidth: 1200, margin: '0 auto' }}>
         <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr', gap: '3rem', marginBottom: '3rem' }} className="footer-grid">
           <div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.25rem' }}>
-              <div style={{ width: 36, height: 36, borderRadius: 12, background: 'linear-gradient(135deg, #3AACF0, #5B8DEF)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                  <circle cx="9" cy="9" r="3" fill="white" fillOpacity="0.9"/>
-                  <circle cx="9" cy="3" r="1.5" fill="white" fillOpacity="0.6"/>
-                  <circle cx="9" cy="15" r="1.5" fill="white" fillOpacity="0.6"/>
-                  <circle cx="3" cy="9" r="1.5" fill="white" fillOpacity="0.6"/>
-                  <circle cx="15" cy="9" r="1.5" fill="white" fillOpacity="0.6"/>
-                  <line x1="9" y1="6" x2="9" y2="4.5" stroke="white" strokeWidth="1" strokeOpacity="0.5"/>
-                  <line x1="9" y1="12" x2="9" y2="13.5" stroke="white" strokeWidth="1" strokeOpacity="0.5"/>
-                  <line x1="6" y1="9" x2="4.5" y2="9" stroke="white" strokeWidth="1" strokeOpacity="0.5"/>
-                  <line x1="12" y1="9" x2="13.5" y2="9" stroke="white" strokeWidth="1" strokeOpacity="0.5"/>
-                </svg>
-              </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '1.25rem' }}>
+              <img src={naaMark} alt="NeuroAccess Alliance" style={{ height: 34, width: 'auto', display: 'block' }} />
               <div>
                 <div style={{ fontFamily: 'DM Serif Display, Georgia, serif', fontSize: '1.1rem', color: '#1A2B3C', lineHeight: 1.1 }}>NeuroAccess</div>
                 <div style={{ fontFamily: 'Nunito, sans-serif', fontSize: '0.55rem', fontWeight: 700, color: '#3AACF0', letterSpacing: '0.2em', textTransform: 'uppercase' }}>Alliance</div>
@@ -62,7 +51,7 @@ export default function Footer() {
 
         <div style={{ borderTop: '1px solid rgba(110,198,245,0.3)', paddingTop: '1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.75rem' }}>
           <div style={{ fontFamily: 'Nunito, sans-serif', fontSize: '0.78rem', color: '#7A9AB0', fontWeight: 400 }}>
-            © 2025 NeuroAccess Alliance. All rights reserved. Donations are tax-deductible to the extent allowed by law.
+            © {new Date().getFullYear()} NeuroAccess Alliance. All rights reserved. Donations are tax-deductible to the extent allowed by law.
           </div>
           <div style={{ fontFamily: 'Nunito, sans-serif', fontSize: '0.78rem', color: '#7A9AB0', fontWeight: 400 }}>Raleigh, North Carolina</div>
         </div>
