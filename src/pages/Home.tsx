@@ -1,5 +1,5 @@
 import { Link } from 'react-router'
-import { IconGraduate, IconShield, IconMapPin, IconBook, IconUsers, IconFlask, IconGlobe } from '../app/Icons'
+import { IconShield, IconMapPin, IconBook, IconUsers, IconFlask, IconGlobe } from '../app/Icons'
 
 export default function Home() {
   return (
@@ -43,7 +43,6 @@ export default function Home() {
             {/* Stats panel */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               {[
-                { num: '3', label: 'University Partnerships', sub: 'NC State and regional institutions', Icon: IconGraduate, grad: 'linear-gradient(135deg, #F4F1E9, #E1E9E7)', iconColor: '#5E8A8C' },
                 { num: '501(c)(3)', label: 'Federal Tax-Exempt Status', sub: 'North Carolina nonprofit corporation', Icon: IconShield, grad: 'linear-gradient(135deg, #EFF3EE, #DCE8DC)', iconColor: '#5F8A6E' },
                 { num: '2026', label: 'Founded in Raleigh, NC', sub: 'Mission-driven from day one', Icon: IconMapPin, grad: 'linear-gradient(135deg, #FBF5E8, #F2E4CA)', iconColor: '#C4924A' },
               ].map((stat, i) => (
