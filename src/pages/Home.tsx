@@ -12,18 +12,13 @@ export default function Home() {
         <div style={{ maxWidth: 1200, margin: '0 auto', position: 'relative' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }} className="hero-grid">
             <div>
-              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: 'linear-gradient(135deg, #F4F1E9, #EBE5D9)', border: '1px solid rgba(94,138,140,0.3)', borderRadius: 50, padding: '0.35rem 1rem 0.35rem 0.6rem', marginBottom: '2rem' }}>
-                <div style={{ width: 8, height: 8, borderRadius: '50%', background: '#5E8A8C' }} />
-                <span style={{ fontFamily: 'Nunito, sans-serif', fontSize: '0.78rem', fontWeight: 700, color: '#48696C', letterSpacing: '0.04em' }}>Expanding Neurotechnology Access</span>
-              </div>
-
               <h1 style={{ fontFamily: 'DM Serif Display, Georgia, serif', fontSize: 'clamp(2.6rem, 5vw, 4rem)', fontWeight: 400, color: '#2C3A47', lineHeight: 1.12, margin: '0 0 1.5rem', letterSpacing: '-0.01em' }}>
                 Empowering the Next Generation of{' '}
                 <span style={{ color: '#5E8A8C', fontStyle: 'italic' }}>Neuroscience Innovators</span>
               </h1>
 
-              <p style={{ fontFamily: 'Nunito, sans-serif', fontSize: '1.05rem', fontWeight: 400, color: '#55656F', lineHeight: 1.8, margin: '0 0 2.5rem', maxWidth: 500 }}>
-                The NeuroAccess Alliance is a nonprofit dedicated to expanding equitable access to transformative neurotechnology and improving quality of life for individuals affected by neurological challenges.
+              <p style={{ fontFamily: 'Nunito, sans-serif', fontSize: '1.05rem', fontWeight: 400, color: '#55656F', lineHeight: 1.8, margin: '0 0 2.5rem', maxWidth: 520 }}>
+                The NeuroAccess Alliance is a nonprofit dedicated to expanding equitable access to transformative neurotechnology, empowering the next generation of neuroscience innovators, and improving quality of life for individuals affected by neurological challenges.
               </p>
 
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>

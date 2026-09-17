@@ -1,5 +1,5 @@
 import { Link } from 'react-router'
-import { IconMail, IconMapPin, IconUsers } from '../app/Icons'
+import { IconMail, IconMapPin, IconUsers, IconLinkedIn } from '../app/Icons'
 
 export default function Contact() {
   return (
@@ -37,9 +37,23 @@ export default function Contact() {
           </a>
 
           {/* Secondary routes */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.25rem', maxWidth: 720 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(212px, 1fr))', gap: '1.25rem', maxWidth: 720 }}>
+            <a href="https://www.linkedin.com/company/neuroaccess-alliance/" target="_blank" rel="noopener noreferrer"
+              style={{ display: 'flex', alignItems: 'center', gap: '1rem', padding: '1.5rem 1.5rem', background: '#FAF8F3', borderRadius: 20, border: '1.5px solid rgba(94,138,140,0.15)', textDecoration: 'none', transition: 'border-color 0.2s' }}
+              onMouseEnter={e => (e.currentTarget.style.borderColor = 'rgba(94,138,140,0.45)')}
+              onMouseLeave={e => (e.currentTarget.style.borderColor = 'rgba(94,138,140,0.15)')}
+            >
+              <div style={{ width: 40, height: 40, borderRadius: 12, background: 'rgba(94,138,140,0.12)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                <IconLinkedIn size={18} color="#5E8A8C" />
+              </div>
+              <div>
+                <div style={{ fontFamily: 'Nunito, sans-serif', fontSize: '0.7rem', fontWeight: 800, color: '#8B9A9C', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Follow us</div>
+                <div style={{ fontFamily: 'Nunito, sans-serif', fontSize: '0.9rem', color: '#2C3A47', fontWeight: 600 }}>On LinkedIn</div>
+              </div>
+            </a>
+
             <Link to="/board"
-              style={{ display: 'flex', alignItems: 'center', gap: '1rem', padding: '1.5rem 1.75rem', background: '#FAF8F3', borderRadius: 20, border: '1.5px solid rgba(94,138,140,0.15)', textDecoration: 'none', transition: 'border-color 0.2s' }}
+              style={{ display: 'flex', alignItems: 'center', gap: '1rem', padding: '1.5rem 1.5rem', background: '#FAF8F3', borderRadius: 20, border: '1.5px solid rgba(94,138,140,0.15)', textDecoration: 'none', transition: 'border-color 0.2s' }}
               onMouseEnter={e => (e.currentTarget.style.borderColor = 'rgba(94,138,140,0.45)')}
               onMouseLeave={e => (e.currentTarget.style.borderColor = 'rgba(94,138,140,0.15)')}
             >
@@ -47,12 +61,12 @@ export default function Contact() {
                 <IconUsers size={18} color="#5E8A8C" />
               </div>
               <div>
-                <div style={{ fontFamily: 'Nunito, sans-serif', fontSize: '0.7rem', fontWeight: 800, color: '#8B9A9C', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Reach us directly</div>
-                <div style={{ fontFamily: 'Nunito, sans-serif', fontSize: '0.9rem', color: '#2C3A47', fontWeight: 600 }}>Our board on LinkedIn</div>
+                <div style={{ fontFamily: 'Nunito, sans-serif', fontSize: '0.7rem', fontWeight: 800, color: '#8B9A9C', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Reach us</div>
+                <div style={{ fontFamily: 'Nunito, sans-serif', fontSize: '0.9rem', color: '#2C3A47', fontWeight: 600 }}>Our board</div>
               </div>
             </Link>
 
-            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', padding: '1.5rem 1.75rem', background: '#FAF8F3', borderRadius: 20, border: '1.5px solid rgba(94,138,140,0.15)' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', padding: '1.5rem 1.5rem', background: '#FAF8F3', borderRadius: 20, border: '1.5px solid rgba(94,138,140,0.15)' }}>
               <div style={{ width: 40, height: 40, borderRadius: 12, background: 'rgba(74,107,124,0.12)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                 <IconMapPin size={18} color="#4A6B7C" />
               </div>

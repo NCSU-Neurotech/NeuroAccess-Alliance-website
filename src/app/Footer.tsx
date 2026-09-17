@@ -1,8 +1,8 @@
 import { NavLink } from 'react-router'
 import naaLogo from '../assets/naa-logo.png'
 
-const nav = ['Mission', 'Story', 'Board', 'Partners', 'Programs', 'Contact', 'Documents']
-const navPaths: Record<string, string> = { Mission: '/', Story: '/story', Board: '/board', Partners: '/partners', Programs: '/programs', Contact: '/contact', Documents: '/documents' }
+const nav = ['Mission', 'Story', 'Board', 'Partners', 'Programs', 'Contact']
+const navPaths: Record<string, string> = { Mission: '/', Story: '/story', Board: '/board', Partners: '/partners', Programs: '/programs', Contact: '/contact' }
 
 export default function Footer() {
   return (
@@ -39,7 +39,7 @@ export default function Footer() {
 
           <div>
             <div style={{ fontFamily: 'Nunito, sans-serif', fontSize: '0.7rem', fontWeight: 800, color: '#2C3A47', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: '1rem' }}>Partners</div>
-            {['Neurotech at NC State', 'Neuroscience Club at NC State', 'Synaptive', 'NC State University'].map(p => (
+            {['Neurotech at NC State', 'Neuroscience Club at NC State', 'Synaptive'].map(p => (
               <div key={p} style={{ fontFamily: 'Nunito, sans-serif', fontSize: '0.85rem', color: '#55656F', fontWeight: 400, marginBottom: '0.5rem', lineHeight: 1.4 }}>{p}</div>
             ))}
           </div>
