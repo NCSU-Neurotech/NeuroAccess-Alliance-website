@@ -9,19 +9,19 @@
 html {
   scroll-behavior: smooth;
   scrollbar-width: thin;
-  scrollbar-color: #6EC6F5 #EEF6FF;
+  scrollbar-color: #8AA5A7 #F4F1E9;
 }
 
 body {
   margin: 0;
   padding: 0;
   background-color: #FFFFFF;
-  color: #1A2B3C;
+  color: #2C3A47;
   font-family: 'Nunito', system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
 ::selection {
-  background-color: #A8DEFF;
-  color: #0A4A7A;
+  background-color: #D2DEDA;
+  color: #2C3A47;
 }
