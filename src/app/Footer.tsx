@@ -1,8 +1,8 @@
 import { NavLink } from 'react-router'
 import naaLogo from '../assets/naa-logo.png'
 
-const nav = ['Mission', 'Story', 'Board', 'Partners', 'Programs', 'Contact']
-const navPaths: Record<string, string> = { Mission: '/', Story: '/story', Board: '/board', Partners: '/partners', Programs: '/programs', Contact: '/contact' }
+const nav = ['Mission', 'Story', 'Board', 'Partners', 'Programs', 'Contact', 'Documents']
+const navPaths: Record<string, string> = { Mission: '/', Story: '/story', Board: '/board', Partners: '/partners', Programs: '/programs', Contact: '/contact', Documents: '/documents' }
 
 export default function Footer() {
   return (
@@ -17,7 +17,7 @@ export default function Footer() {
               Expanding equitable access to transformative neurotechnology and improving quality of life for individuals affected by neurological challenges.
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-              {[['EIN', '88-XXXXXXX'], ['Registration', 'North Carolina Nonprofit Corporation'], ['Status', '501(c)(3) Tax-Exempt Organization']].map(([label, val]) => (
+              {[['EIN', '42-2695701'], ['Registration', 'North Carolina Nonprofit Corporation'], ['Status', '501(c)(3) Tax-Exempt Organization']].map(([label, val]) => (
                 <div key={label} style={{ display: 'flex', gap: '0.75rem', fontFamily: 'Nunito, sans-serif', fontSize: '0.8rem' }}>
                   <span style={{ color: '#5E8A8C', fontWeight: 700, minWidth: 90 }}>{label}</span>
                   <span style={{ color: '#55656F', fontWeight: 400 }}>{val}</span>
@@ -45,11 +45,16 @@ export default function Footer() {
           </div>
         </div>
 
-        <div style={{ borderTop: '1px solid rgba(138,165,167,0.3)', paddingTop: '1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.75rem' }}>
-          <div style={{ fontFamily: 'Nunito, sans-serif', fontSize: '0.78rem', color: '#8B9A9C', fontWeight: 400 }}>
-            © {new Date().getFullYear()} NeuroAccess Alliance. All rights reserved. Donations are tax-deductible to the extent allowed by law.
+        <div style={{ borderTop: '1px solid rgba(138,165,167,0.3)', paddingTop: '1.5rem' }}>
+          <p style={{ fontFamily: 'Nunito, sans-serif', fontSize: '0.78rem', color: '#8B9A9C', fontWeight: 400, lineHeight: 1.75, margin: '0 0 1rem', maxWidth: 760 }}>
+            NeuroAccess Alliance is a 501(c)(3) tax-exempt nonprofit corporation incorporated in North Carolina. EIN: 42-2695701. All donations are tax-deductible to the extent permitted by law.
+          </p>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.75rem' }}>
+            <div style={{ fontFamily: 'Nunito, sans-serif', fontSize: '0.78rem', color: '#8B9A9C', fontWeight: 400 }}>
+              © {new Date().getFullYear()} NeuroAccess Alliance. All rights reserved.
+            </div>
+            <div style={{ fontFamily: 'Nunito, sans-serif', fontSize: '0.78rem', color: '#8B9A9C', fontWeight: 400 }}>Raleigh, North Carolina</div>
           </div>
-          <div style={{ fontFamily: 'Nunito, sans-serif', fontSize: '0.78rem', color: '#8B9A9C', fontWeight: 400 }}>Raleigh, North Carolina</div>
         </div>
       </div>
     </footer>

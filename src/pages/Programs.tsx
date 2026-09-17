@@ -1,58 +1,18 @@
 import { Link } from 'react-router'
-import { IconGraduate, IconPlug, IconLightbulb, IconHandshake, IconCalendar, IconHeart } from '../app/Icons'
+import { IconHandshake, IconFlask } from '../app/Icons'
 
+// One entry per thing we are actually running. Add to this array as programs start.
 const programs = [
   {
     num: '01',
-    name: 'NeuroReach Workshops',
-    tag: 'Education',
-    Icon: IconGraduate,
+    name: 'Industry Partnerships',
+    tag: 'Active',
+    Icon: IconHandshake,
     iconColor: '#5E8A8C',
     tagBg: '#5E8A8C',
-    bg: 'linear-gradient(135deg, #F4F1E9, #E8EDEC)',
+    bg: 'linear-gradient(135deg, #F4F1E9, #E1E9E7)',
     border: 'rgba(94,138,140,0.2)',
-    description: 'Hands-on workshops introducing students and community members to neurotechnology concepts, tools, and career pathways. Sessions cover EEG fundamentals, BCI software, and ethical considerations in neural data.',
-    impact: 'Your sponsorship funds workshop kits, facilitator training, and scholarships for underrepresented participants.',
-    status: 'Planned — Launching 2026–27',
-  },
-  {
-    num: '02',
-    name: 'Hardware Access Program',
-    tag: 'Equipment',
-    Icon: IconPlug,
-    iconColor: '#C4924A',
-    tagBg: '#C4924A',
-    bg: 'linear-gradient(135deg, #FBF5E8, #F2E4CA)',
-    border: 'rgba(196,146,74,0.2)',
-    description: 'A lending library of consumer neurotechnology hardware — EEG headsets, EMG sensors, and related devices — available to students, researchers, and individuals at no cost. The first of its kind in the Triangle.',
-    impact: 'Each sponsored device kit enables up to 12 students per semester to run real neural data experiments without personal cost.',
-    status: 'Planned — 2026–27',
-  },
-  {
-    num: '03',
-    name: 'Research Seed Grants',
-    tag: 'Funding',
-    Icon: IconLightbulb,
-    iconColor: '#4A6B7C',
-    tagBg: '#4A6B7C',
-    bg: 'linear-gradient(135deg, #F1EFE7, #E7E3D9)',
-    border: 'rgba(74,107,124,0.2)',
-    description: 'Micro-grants of $500–$2,500 for undergraduate and early-graduate researchers pursuing neuroscience projects with translational or community relevance. Priority given to first-generation students and underrepresented groups.',
-    impact: 'A $5,000 sponsorship funds two complete research grants plus program administration for a full academic year.',
-    status: 'Planned — AY 2026–27',
-  },
-  {
-    num: '04',
-    name: 'Clinical Community Bridge',
-    tag: 'Outreach',
-    Icon: IconHandshake,
-    iconColor: '#5F8A6E',
-    tagBg: '#5F8A6E',
-    bg: 'linear-gradient(135deg, #EFF4EF, #E1EDE2)',
-    border: 'rgba(95,138,110,0.2)',
-    description: 'Connecting NAA members with patients and caregivers at partner care facilities to understand lived neurological experience. Includes facilitated roundtables, assistive technology demonstrations, and co-design sessions.',
-    impact: 'Sponsorship funds facilitator stipends, accessible materials, and transportation for community participants.',
-    status: 'Planned — Pilot 2026–27',
+    description: 'We work with neurotechnology companies in the Research Triangle and put students and partner organizations in front of them. Our first partnership is with Synaptive, built around expanding access to neuroscience across the RTP. In practice that runs both directions. Students and partner organizations get real exposure to companies building this technology, and those companies get student partners who can run testing for them.',
   },
 ]
 
@@ -69,14 +29,17 @@ export default function Programs() {
           </div>
 
           <h2 style={{ fontFamily: 'DM Serif Display, Georgia, serif', fontSize: 'clamp(2rem, 3.5vw, 3.2rem)', fontWeight: 400, color: '#2C3A47', lineHeight: 1.15, margin: '0 0 1rem' }}>
-            What Your Support{' '}
-            <span style={{ color: '#5E8A8C', fontStyle: 'italic' }}>Makes Possible</span>
+            What We Are{' '}
+            <span style={{ color: '#5E8A8C', fontStyle: 'italic' }}>Actually Doing</span>
           </h2>
-          <p style={{ fontFamily: 'Nunito, sans-serif', fontSize: '1rem', fontWeight: 400, color: '#55656F', lineHeight: 1.8, margin: '0 0 4rem', maxWidth: 520 }}>
-            Our programs are designed to create tangible, measurable access to neuroscience education, equipment, and funding for those who need it most.
+          <p style={{ fontFamily: 'Nunito, sans-serif', fontSize: '1rem', fontWeight: 400, color: '#55656F', lineHeight: 1.85, margin: '0 0 1.25rem', maxWidth: 620 }}>
+            The Research Triangle is full of companies building neurotechnology, and most students studying neuroscience here will never set foot in one of them. So that is the gap we started with, because it is the one we can close right now.
+          </p>
+          <p style={{ fontFamily: 'Nunito, sans-serif', fontSize: '1rem', fontWeight: 400, color: '#55656F', lineHeight: 1.85, margin: '0 0 4rem', maxWidth: 620 }}>
+            We would rather show you one partnership we are running than a catalog of programs we have not started. This page will grow.
           </p>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem', marginBottom: '4rem' }} className="programs-grid">
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(420px, 1fr))', gap: '1.5rem', marginBottom: '3rem' }} className="programs-grid">
             {programs.map((p, i) => (
               <div key={i} style={{ background: p.bg, border: `1.5px solid ${p.border}`, borderRadius: 24, padding: '2.5rem', display: 'flex', flexDirection: 'column', gap: '1.25rem', transition: 'transform 0.25s, box-shadow 0.25s' }}
                 onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.transform = 'translateY(-3px)'; (e.currentTarget as HTMLDivElement).style.boxShadow = '0 10px 30px rgba(94,138,140,0.12)' }}
@@ -91,21 +54,19 @@ export default function Programs() {
                 <div>
                   <div style={{ fontFamily: 'Nunito, sans-serif', fontSize: '0.65rem', fontWeight: 800, color: '#8B9A9C', letterSpacing: '0.15em', marginBottom: '0.3rem' }}>{p.num}</div>
                   <h3 style={{ fontFamily: 'DM Serif Display, Georgia, serif', fontSize: '1.4rem', fontWeight: 400, color: '#2C3A47', margin: '0 0 0.75rem' }}>{p.name}</h3>
-                  <p style={{ fontFamily: 'Nunito, sans-serif', fontSize: '0.9rem', fontWeight: 400, color: '#55656F', lineHeight: 1.8, margin: 0 }}>{p.description}</p>
-                </div>
-                <div style={{ padding: '1.25rem', background: 'rgba(255,255,255,0.7)', borderRadius: 16, marginTop: 'auto', border: '1px solid rgba(255,255,255,0.9)' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', marginBottom: '0.4rem' }}>
-                    <IconHeart size={13} color="#5E8A8C" />
-                    <div style={{ fontFamily: 'Nunito, sans-serif', fontSize: '0.68rem', fontWeight: 800, color: '#5E8A8C', letterSpacing: '0.12em', textTransform: 'uppercase' }}>Sponsor Impact</div>
-                  </div>
-                  <p style={{ fontFamily: 'Nunito, sans-serif', fontSize: '0.85rem', color: '#55656F', lineHeight: 1.7, margin: 0 }}>{p.impact}</p>
-                </div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-                  <IconCalendar size={13} color="#8B9A9C" />
-                  <div style={{ fontFamily: 'Nunito, sans-serif', fontSize: '0.75rem', color: '#8B9A9C', fontWeight: 600 }}>{p.status}</div>
+                  <p style={{ fontFamily: 'Nunito, sans-serif', fontSize: '0.95rem', fontWeight: 400, color: '#55656F', lineHeight: 1.85, margin: 0 }}>{p.description}</p>
                 </div>
               </div>
             ))}
+          </div>
+
+          <div style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', padding: '1.75rem 2rem', background: '#FAF8F3', border: '1.5px dashed rgba(94,138,140,0.3)', borderRadius: 20, marginBottom: '4rem', maxWidth: 780 }}>
+            <div style={{ width: 38, height: 38, borderRadius: 12, background: 'rgba(255,255,255,0.9)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+              <IconFlask size={18} color="#5E8A8C" />
+            </div>
+            <p style={{ fontFamily: 'Nunito, sans-serif', fontSize: '0.92rem', color: '#55656F', lineHeight: 1.8, margin: 0 }}>
+              More is coming as we grow. If your organization wants a say in what we take on next, now is the useful time to talk to us.
+            </p>
           </div>
 
           <div style={{ textAlign: 'center' }}>
@@ -113,7 +74,7 @@ export default function Programs() {
               style={{ fontFamily: 'Nunito, sans-serif', fontSize: '1rem', fontWeight: 700, color: '#fff', background: 'linear-gradient(135deg, #5E8A8C, #4A6B7C)', padding: '1rem 2.5rem', borderRadius: 50, textDecoration: 'none', display: 'inline-block', boxShadow: '0 6px 20px rgba(94,138,140,0.35)', transition: 'opacity 0.2s, transform 0.2s' }}
               onMouseEnter={e => { e.currentTarget.style.opacity = '0.88'; e.currentTarget.style.transform = 'translateY(-2px)' }}
               onMouseLeave={e => { e.currentTarget.style.opacity = '1'; e.currentTarget.style.transform = 'translateY(0)' }}
-            >Fund a Program</Link>
+            >Work With Us</Link>
           </div>
         </div>
       </section>

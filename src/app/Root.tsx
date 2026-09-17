@@ -8,8 +8,6 @@ const responsiveStyles = `
     .story-grid { grid-template-columns: 1fr !important; gap: 2.5rem !important; }
     .board-grid { grid-template-columns: 1fr !important; }
     .programs-grid { grid-template-columns: 1fr !important; }
-    .tiers-grid { grid-template-columns: 1fr !important; }
-    .contact-grid { grid-template-columns: 1fr !important; gap: 2.5rem !important; }
     .footer-grid { grid-template-columns: 1fr !important; gap: 2rem !important; }
     .partner-row { grid-template-columns: 1fr !important; }
     .hidden-mobile { display: none !important; }

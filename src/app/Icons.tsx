@@ -193,3 +193,11 @@ export function IconParty({ size = 20, color = 'currentColor', strokeWidth = 1.8
     </svg>
   )
 }
+
+export function IconLinkedIn({ size = 20, color = 'currentColor' }: { size?: number; color?: string }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill={color}>
+      <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM2.4 21.5h5.16V9.25H2.4V21.5zM9.9 9.25h4.95v1.67h.07c.69-1.24 2.37-2.55 4.88-2.55 5.22 0 6.18 3.3 6.18 7.6v7.53h-5.15v-6.67c0-1.59-.03-3.64-2.28-3.64-2.28 0-2.63 1.74-2.63 3.53v6.78H9.9V9.25z" />
+    </svg>
+  )
+}

@@ -7,6 +7,7 @@ import Partners from '../pages/Partners'
 import PartnerDetail from '../pages/PartnerDetail'
 import Programs from '../pages/Programs'
 import Contact from '../pages/Contact'
+import Documents from '../pages/Documents'
 
 export const router = createBrowserRouter([
   {
@@ -20,6 +21,7 @@ export const router = createBrowserRouter([
       { path: 'partners/:slug', Component: PartnerDetail },
       { path: 'programs', Component: Programs },
       { path: 'contact', Component: Contact },
+      { path: 'documents', Component: Documents },
     ],
   },
 ])
