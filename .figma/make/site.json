@@ -1,7 +1,8 @@
 {
-  "description": "Connects neuroscience students, researchers, and neuro-impaired individuals with educational resources, funding, and partnerships to advance neurotechnology access.",
+  "title": "NeuroAccess Alliance | Expanding Access to Neurotechnology",
+  "description": "NeuroAccess Alliance is a Raleigh, NC nonprofit connecting students, researchers, clinicians, and funders to expand equitable access to neurotechnology.",
   "robots": {
-    "index": false
+    "index": true
   },
   "accessibility": {
     "addBypassLinks": false,
