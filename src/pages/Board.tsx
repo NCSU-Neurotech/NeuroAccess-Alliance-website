@@ -31,7 +31,7 @@ const boardMembers = [
   },
   {
     name: 'Sam Wychowski',
-    linkedin: '',
+    linkedin: 'https://www.linkedin.com/in/samuel-wychowski-08b374392/',
     title: 'Secretary',
     credentials: 'Founding Member',
     affiliation: 'NC State University',
