@@ -34,7 +34,7 @@ export default function Story() {
                   label: 'Mission', Icon: IconTarget, iconColor: '#5E8A8C',
                   bg: 'linear-gradient(135deg, #F4F1E9, #E8EDEC)',
                   border: 'rgba(94,138,140,0.25)', labelColor: '#48696C',
-                  text: '"Our mission at NAA is to connect the neuroscience community — students, researchers, clinicians, and funders — around shared resources, shared purpose, and shared commitment to equitable access."',
+                  text: '"Our mission at NAA is to connect the neuroscience community — students, researchers, clinicians, and funders — around shared resources, shared purpose, and shared commitment to access."',
                   serif: true,
                 },
                 {

@@ -18,7 +18,7 @@ export default function Home() {
               </h1>
 
               <p style={{ fontFamily: 'Nunito, sans-serif', fontSize: '1.05rem', fontWeight: 400, color: '#55656F', lineHeight: 1.8, margin: '0 0 2.5rem', maxWidth: 520 }}>
-                The NeuroAccess Alliance is a nonprofit dedicated to expanding equitable access to transformative neurotechnology, empowering the next generation of neuroscience innovators, and improving quality of life for individuals affected by neurological challenges.
+                The NeuroAccess Alliance is a nonprofit dedicated to expanding access to transformative neurotechnology, empowering the next generation of neuroscience innovators, and improving quality of life for individuals affected by neurological challenges.
               </p>
 
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>

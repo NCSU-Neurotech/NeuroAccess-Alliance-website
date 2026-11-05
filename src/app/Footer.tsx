@@ -14,7 +14,7 @@ export default function Footer() {
               <img src={naaLogo} alt="NeuroAccess Alliance" style={{ height: 46, width: 'auto', display: 'block' }} />
             </div>
             <p style={{ fontFamily: 'Nunito, sans-serif', fontSize: '0.88rem', fontWeight: 400, color: '#55656F', lineHeight: 1.8, margin: '0 0 1.5rem', maxWidth: 360 }}>
-              Expanding equitable access to transformative neurotechnology and improving quality of life for individuals affected by neurological challenges.
+              Expanding access to transformative neurotechnology and improving quality of life for individuals affected by neurological challenges.
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
               {[['EIN', '42-2695701'], ['Registration', 'North Carolina Nonprofit Corporation'], ['Status', '501(c)(3) Tax-Exempt Organization']].map(([label, val]) => (
