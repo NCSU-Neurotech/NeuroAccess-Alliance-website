@@ -1,5 +1,6 @@
 import { Link } from 'react-router'
 import { IconShield, IconMapPin, IconBook, IconUsers, IconFlask, IconGlobe } from '../app/Icons'
+import EmailSignup from '../app/EmailSignup'
 
 export default function Home() {
   return (
@@ -84,6 +85,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <EmailSignup />
     </div>
   )
 }
