@@ -1,7 +1,6 @@
 import { Outlet } from 'react-router'
 import Nav from './Nav'
 import Footer from './Footer'
-import EmailSignup from './EmailSignup'
 
 const responsiveStyles = `
   @media (max-width: 1000px) {
@@ -26,7 +25,6 @@ export default function Root() {
       <Nav />
       <main style={{ paddingTop: 68, minHeight: 'calc(100vh - 68px)', background: '#fff' }}>
         <Outlet />
-        <EmailSignup />
       </main>
       <Footer />
     </>
